@@ -55,7 +55,7 @@ void ScalarConverter::convert(const std::string str)
         }
 		catch(...) 
 		{
-			std::cout << "Some exception";
+			std::cout << "Unable to convert value...";
 		}
 	}
 }
