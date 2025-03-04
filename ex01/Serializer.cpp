@@ -1,5 +1,9 @@
 #include "Serializer.hpp"
 
+Serializer::Serializer() {
+    std::cout << "Serializer Default Constructor called\n";
+}
+
 unsigned long Serializer::serialize(Data* ptr) {
     return reinterpret_cast<unsigned long>(ptr);
 }

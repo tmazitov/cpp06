@@ -3,17 +3,15 @@
 
 #include "Data.hpp"
 #include <limits.h>
-
+#include <iostream>
 
 class Serializer {
-public:
-    static unsigned long serialize(Data* ptr);
-    static Data* deserialize(unsigned long raw);
+    public:
+        static unsigned long serialize(Data* ptr);
+        static Data* deserialize(unsigned long raw);
 
-private:
-    Serializer();
-    Serializer(const Serializer&);
-    Serializer& operator=(const Serializer&);
+    private:
+        Serializer();
 };
 
 #endif
